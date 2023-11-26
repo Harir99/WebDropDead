@@ -10,7 +10,8 @@ services:
     buildCommand: "./bin/render-build.sh"
     startCommand: "bundle exec puma -C config/puma.rb"
     envVars:
-      - key: postgres://web_drop_dead_db_user:wQDsNbn5aNlZdziaidzmzQaGUmPGe88p@dpg-clhmilebbf9s73b25img-a/web_drop_dead_db
+      key: DATABASE_URL
+      value: postgres://web_drop_dead_db_user:wQDsNbn5aNlZdziaidzmzQaGUmPGe88p@dpg-clhmilebbf9s73b25img-a/web_drop_dead_db
         fromDatabase:
           name: web_drop_dead_db
           property: connectionString
