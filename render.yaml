@@ -1,5 +1,6 @@
 databases:
   - name: postgres
+    ipAllowList: []
     databaseName: webdropdead
     user: harir99
 
@@ -8,7 +9,8 @@ services:
     name: WebDropDead
     runtime: ruby
     buildCommand: "./render-build.sh"
-    startCommand: "bundle exec puma -C config/puma.rb"
+    # startCommand: "bundle exec puma -C config/puma.rb"
+    startCommand: "bundle exec rails s"
     envVars:
       - key: DATABASE_URL
         fromDatabase:
