@@ -12,7 +12,7 @@ services:
     envVars:
       - key: postgres://web_drop_dead_db_user:wQDsNbn5aNlZdziaidzmzQaGUmPGe88p@dpg-clhmilebbf9s73b25img-a/web_drop_dead_db
         fromDatabase:
-          name: WebDropDead
+          name: web_drop_dead_db
           property: connectionString
       - key: RAILS_MASTER_KEY
         sync: false
