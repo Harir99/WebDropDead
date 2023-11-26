@@ -13,7 +13,7 @@ services:
       key: DATABASE_URL
       value: postgres://web_drop_dead_db_user:wQDsNbn5aNlZdziaidzmzQaGUmPGe88p@dpg-clhmilebbf9s73b25img-a/web_drop_dead_db
         fromDatabase:
-          name: web_drop_dead_db
+          name: WebDropDead
           property: connectionString
       - key: RAILS_MASTER_KEY
         sync: false
