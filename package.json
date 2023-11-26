@@ -1,0 +1,10 @@
+{
+    "name": "WebDropDead",
+    "version": "1.0.0",
+    "scripts": {
+      "start": "echo 'This is a Ruby on Rails application. No start script needed.'"
+    },
+    "engines": {
+      "node": ">=12.0.0"
+    }
+  }
