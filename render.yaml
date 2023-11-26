@@ -1,7 +1,7 @@
 databases:
   - name: postgres
     databaseName: web_drop_dead_db
-    user: harir99
+    user: WebDropDead
 
 services:
   - type: web
@@ -10,10 +10,9 @@ services:
     buildCommand: "./bin/render-build.sh"
     startCommand: "bundle exec puma -C config/puma.rb"
     envVars:
-      key: DATABASE_URL
+      - key: DATABASE_URL
         fromDatabase:
           name: WebDropDead
           property: connectionString
-      # value: postgres://web_drop_dead_db_user:wQDsNbn5aNlZdziaidzmzQaGUmPGe88p@dpg-clhmilebbf9s73b25img-a/web_drop_dead_db
       - key: RAILS_MASTER_KEY
         sync: false
