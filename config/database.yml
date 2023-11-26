@@ -27,4 +27,6 @@ test:
 
 production:
   <<: *default
+  database: WebDropDead
+  username: halrubay
   url: <%= ENV['DATABASE_URL'] %>
