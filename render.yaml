@@ -1,7 +1,7 @@
 databases:
   - name: postgres
-    databaseName: WebDropDead
-    user: WebDropDead
+    # databaseName: WebDropDead
+    # user: WebDropDead
 
 services:
   - type: web
