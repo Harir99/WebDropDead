@@ -1,6 +1,6 @@
 databases:
   - name: postgres
-    databaseName: webdropdead
+    databaseName: web_drop_dead_db
     user: harir99
 
 services:
