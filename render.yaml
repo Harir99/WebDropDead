@@ -5,7 +5,7 @@ databases:
 
 services:
   - type: web
-    name: webdropdead
+    name: WebDropDead
     runtime: ruby
 
     buildCommand: ./bin/render-build.sh
