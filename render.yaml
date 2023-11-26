@@ -8,7 +8,6 @@ services:
   - type: web
     name: WebDropDead
     runtime: ruby
-    rootDir: WebDropDead
     buildCommand: "./render-build.sh"
     # startCommand: "bundle exec puma -C config/puma.rb"
     startCommand: "bundle exec rails s"
