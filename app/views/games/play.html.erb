@@ -1,0 +1,23 @@
+<div class='center-container'>
+  <div class="sign-in-box">
+    <h1>Play Game</h1>
+
+    <%= form_tag run_game_path, method: :post do %>
+      <div class="form-group">
+        <%= label_tag 'Number of Players' %>
+        <%= number_field_tag 'player_count', nil, min: 1 %>
+      </div>
+      <div class="form-group">
+        <%= label_tag 'Number of Sides' %>
+        <%= number_field_tag 'sides', nil, min: 1 %>
+      </div>
+      <div class="form-group">
+        <%= label_tag 'Number of Dice' %>
+        <%= number_field_tag 'dice_count', nil, min: 1 %>
+      </div>
+      <div class="center">
+        <%= submit_tag 'Submit', class: "btn btn-primary" %>
+      </div>
+    <% end %>
+  </div>
+</div>

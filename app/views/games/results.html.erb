@@ -1,0 +1,23 @@
+<div class="results-container">
+  <div class="results-content">
+    <h1>Game Results</h1>
+	
+		<%= @game_results.gsub("\n", '<br>').html_safe %>
+	<!--
+  <% if @game_results.present? %>
+  <% else %>
+		<p>No game results available.</p>
+	<% end %>-->
+  </div>
+  <div class="button-container">
+    <div class="vertical-buttons">
+      <%= link_to "Play Again", play_again_path(
+        players: @last_players,
+        sides: @last_sides,
+        dice_count: @last_dice_count
+      ), class: "btn btn-secondary btn-vertical" %>
+
+      <%= link_to "Change Settings", play_path, class: "btn btn-secondary btn-vertical" %>
+      <%= link_to "Go Back", new_session_path, class: "btn btn-secondary btn-vertical" %>
+    </div>
+  </div>

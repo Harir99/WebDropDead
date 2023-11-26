@@ -1,0 +1,241 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ 
+ /* CSS */
+.btn-group .btn {
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  float: left;
+  margin-bottom: 2%;
+}
+
+.btn-group .btn:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+.btn-group .btn:hover {
+  background-color: #555555;
+  color: white;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.sign-in-box {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 100px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 80%;
+  max-width: 500px;
+}
+
+.sign-in-box h2 {
+  font-size: 28px;
+  /* margin-top: 10%; */
+}
+
+.field {
+  margin: 40px 0; /* Increase the margin between fields */
+}
+
+.field label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 18px; /* Increase font size for labels */
+}
+
+.field input[type="text"],
+.field input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 16px; /* Increase font size for input fields */
+}
+
+.btn.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.new-to-webdropdead {
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+.new-to-webdropdead a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.new-to-webdropdead a:hover {
+  text-decoration: underline;
+}
+
+/* app/assets/stylesheets/form_styles.css */
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.form-group label {
+  flex: 1;
+  text-align: right;
+  padding-right: 10px;
+  font-weight: bold; /* Add this line to make the label text bold */
+}
+
+.form-group input[type="number"] {
+  flex: 3;
+  text-align: left;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.btn.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* app/assets/stylesheets/application.css */
+/* ... Your existing styles ... */
+.game-results {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* app/assets/stylesheets/application.css */
+/* ... Your existing styles ... */
+.game-results {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.results-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+}
+
+.results-content {
+  flex: 1;
+  text-align: center;
+  margin: 0 10%; /* Adjust the margin as needed */
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 10%;
+  padding-top: 8%;
+}
+
+.vertical-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-vertical {
+  margin: 4%;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  width: 150px; /* Adjust the width to your preference */
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-secondary {
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+}
+
+.btn-secondary:hover {
+  background-color: #555555;
+  color: white;
+}
+
+
